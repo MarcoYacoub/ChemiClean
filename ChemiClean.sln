@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChemiClean", "ChemiClean\ChemiClean.csproj", "{85A4362D-023C-4B9A-9560-EA369828E3A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChemiCleanTest", "ChemiCleanTest\ChemiCleanTest.csproj", "{8D321E0A-A9DB-47FF-BA81-A8AB1961E767}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85A4362D-023C-4B9A-9560-EA369828E3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A4362D-023C-4B9A-9560-EA369828E3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A4362D-023C-4B9A-9560-EA369828E3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A4362D-023C-4B9A-9560-EA369828E3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D321E0A-A9DB-47FF-BA81-A8AB1961E767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D321E0A-A9DB-47FF-BA81-A8AB1961E767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D321E0A-A9DB-47FF-BA81-A8AB1961E767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D321E0A-A9DB-47FF-BA81-A8AB1961E767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6096D798-78BA-4C7A-9ACF-81A9C680C670}
+	EndGlobalSection
+EndGlobal
