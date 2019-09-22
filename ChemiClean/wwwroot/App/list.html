@@ -1,0 +1,82 @@
+﻿<!--Localization is Missing -->
+<div data-ng-controller="ProductsListingController as productsListingCntrl">
+    <div class="row col-12 my-3">
+        <div class="col-6">
+            <input data-ng-model="productsListingCntrl.searchCriteria.keyword" type="text" placeholder="Search" class="input-group-text width-full" />
+        </div>
+        <div class="col-4">
+            <select class="custom-select width-full" data-ng-model="productsListingCntrl.selectedsupplier" data-ng-options="supplier for supplier in productsListingCntrl.suppliers">
+                <option value="">---Select Supplier---</option>
+            </select>
+        </div>
+        <div class="col-2" >
+            <input data-ng-click="productsListingCntrl.searchProducts()" type="button" value="Search" class="btn btn-primary width-full" />
+        </div>
+       
+    </div>
+    <div>
+        <div  class="row col-12 card-header">
+            <div class="row col-12 my-2">
+                <div class="col-6 border-right">
+                    <label>Product Name</label>
+                    
+                </div>
+                <div class="col-2">
+                    <label>Supplier Name</label>
+                </div>
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-2" data-ng-if="product.recentlyModified">
+                    
+                </div>
+
+            </div>
+        </div>
+        <div data-ng-repeat="product in productsListingCntrl.products" class="row col-12 border">
+            <div class="row col-12 my-2 mh-100">
+                <div class="col-6 border-right">
+                    <label>{{product.productName}}</label>
+                    <img src="../Assets/Images/star-512.png" data-ng-if="product.recentlyModified" class="navbar-toggler-icon" />
+                </div>
+                <div class="col-2">
+                    <label>{{product.supplierName}}</label>
+                </div>
+                <div class="col-2" data-ng-if="product.id!=productsListingCntrl.checkingDocumentAvaliable">
+                    <a href="{{productsListingCntrl.getDownloadLink(product)}}" data-ng-if="product.fileAvaliable" class="btn btn-info width-full" target="_blank">Download</a>
+                    <span data-ng-if="!product.fileAvaliable" class="btn btn-dark width-full">Not avaliable</span>
+                </div>
+                
+                <div class="col-2" data-ng-if="product.id!=productsListingCntrl.checkingDocumentAvaliable">
+                    <input data-ng-click="productsListingCntrl.checkAvailability(product)" data-ng-if="!product.fileAvaliable" type="button" value="Check Availability" class="btn btn-secondary width-full" />
+                </div>
+                <div class="col-4" data-ng-if="product.id==productsListingCntrl.checkingDocumentAvaliable">
+                    <img src="../Assets/Images/loading.gif" style="max-height:50px" />
+                </div>
+            </div>
+        </div>
+        <div class="my-2"></div>
+        <div data-ng-if="productsListingCntrl.products.length<productsListingCntrl.totalCount && !productsListingCntrl.loading">
+            <input data-ng-click="productsListingCntrl.LoadMore()" type="button" value="Load More" class="btn btn-secondary" />
+        </div>
+    </div>
+   
+    <div data-ng-if="productsListingCntrl.loading">
+        <img src="../Assets/Images/tenor.gif" />
+    </div>
+    <div>
+        <div class="row col-6">
+            <label>Legend:</label>
+        </div>
+        <div class="row col-6">
+            <div class="col-2">
+                <img src="../Assets/Images/star-512.png" class="navbar-toggler-icon" />
+            </div>
+            <div class="col-4">
+                <label>Recently Updated</label>
+            </div>
+             
+        </div>
+        
+    </div>
+</div>
