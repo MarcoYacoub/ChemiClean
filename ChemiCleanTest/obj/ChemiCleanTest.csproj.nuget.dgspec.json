@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj": {}
+    "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj": {
+    "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj",
+        "projectUniqueName": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj",
         "projectName": "ChemiCleanTest",
-        "projectPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj",
+        "projectPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiCleanTest\\ChemiCleanTest.csproj",
         "packagesPath": "C:\\Users\\Marco.Yacoub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiCleanTest\\obj\\",
+        "outputPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiCleanTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj": {
-                "projectPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj"
+              "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj": {
+                "projectPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj": {
+    "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
+        "projectUniqueName": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
         "projectName": "ChemiClean",
-        "projectPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
+        "projectPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
         "packagesPath": "C:\\Users\\Marco.Yacoub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\obj\\",
+        "outputPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

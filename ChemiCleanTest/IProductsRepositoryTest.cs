@@ -9,13 +9,16 @@ using Xunit;
 
 namespace ChemiCleanTest
 {
+
     public class ProductRepository
     {
+        // Update Connection string to your DB.
+        private readonly string connectionString = @"Server=localhost\SQLEXPRESS;Database=ChemiCleanTest;Trusted_Connection=True;";
         [Fact]
         public async System.Threading.Tasks.Task GetProductsWithNoFiltrationAsync()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
             
@@ -28,7 +31,7 @@ namespace ChemiCleanTest
         public async System.Threading.Tasks.Task GetProductsWithFiltration_PageSizeButNoPageNumberAsync()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -41,7 +44,7 @@ namespace ChemiCleanTest
         public void GetProductsWithFiltration_CaseSensitive()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiClean;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -54,7 +57,7 @@ namespace ChemiCleanTest
         public void GetProductsWithFiltration_PageNumberVeryBigNumber()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiClean;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -66,7 +69,7 @@ namespace ChemiCleanTest
         public void GetProductsWithFiltration_KeyWordEmptyString()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiClean;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -79,7 +82,7 @@ namespace ChemiCleanTest
         public void GetProductDocumentsLastModified_NonExistingIds()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiClean;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 

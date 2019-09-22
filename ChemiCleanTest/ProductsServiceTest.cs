@@ -12,13 +12,15 @@ namespace ChemiCleanTest
 {
     public class ProductsServiceTest
     {
+        // Update Connection string to your DB.
+        private readonly string connectionString = @"Server=localhost\SQLEXPRESS;Database=ChemiCleanTest;Trusted_Connection=True;";
         // Should Make sure to close connections to DB.
         // There are a lot of other cases that should be covered.
         [Fact]
         public async System.Threading.Tasks.Task DownLoadFile_NonexitingFile()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -31,7 +33,7 @@ namespace ChemiCleanTest
         public async System.Threading.Tasks.Task DownLoadFile_NonexitingURL()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -50,7 +52,7 @@ namespace ChemiCleanTest
         public void GetProductById_NoneExistingId()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -64,7 +66,7 @@ namespace ChemiCleanTest
         public async System.Threading.Tasks.Task CheckProductDataSheetAvailabilityAsync_NonExistingProduct()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 
@@ -78,7 +80,7 @@ namespace ChemiCleanTest
         public async System.Threading.Tasks.Task CheckProductDataSheetAvailabilityAsync_NonExistingURL()
         {
             var options = new DbContextOptionsBuilder<ChemiCleanContext>()
-                .UseSqlServer("Data Source=MARCO-PC\\MSSQLSERVER01;Initial Catalog=ChemiCleanTest;Persist Security Info=True;User ID=admin_1;Password=admin")
+                .UseSqlServer(connectionString)
                 .Options;
             var dbContext = new ChemiCleanContext(options);
 

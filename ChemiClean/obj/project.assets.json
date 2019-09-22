@@ -13294,11 +13294,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
+      "projectUniqueName": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
       "projectName": "ChemiClean",
-      "projectPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
+      "projectPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\ChemiClean.csproj",
       "packagesPath": "C:\\Users\\Marco.Yacoub\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marco.Yacoub\\Downloads\\ChemiClean\\ChemiClean\\obj\\",
+      "outputPath": "C:\\Users\\Marco.Yacoub\\Source\\Repos\\MarcoYacoub\\ChemiClean\\ChemiClean\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
