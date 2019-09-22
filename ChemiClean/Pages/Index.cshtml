@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div id="productsApp">
+        <div data-ng-include="'App/list.html'"></div>
+    </div>
+    
+</div>
+<script src="~/App/products.module.js"></script>
+<script src="~/App/list.data.js"></script>
+<script src="~/App/list.js"></script>
+<script>
+    angular.element(document).ready(function () {
+        var productsApp = document.getElementById("productsApp");
+        angular.bootstrap(productsApp, ["app.products"]);
+    });
+</script>

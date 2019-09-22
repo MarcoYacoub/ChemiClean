@@ -1,0 +1,41 @@
+﻿@page
+@model ChemiClean.Pages.ProductsListingModel
+@{
+    ViewData["Title"] = "Products Listing";
+}
+
+<h1>Products Listing</h1>
+@{
+    <div>
+        <form method="post" class="text-center">
+            <input type="text" placeholder="Enter you search here" name="keyWord" value="@ViewData["keyWord"]" />
+            <button asp-page-handler="Search" class="btn btn-info">Search</button>
+            <hr />
+            @foreach (var product in Model.products)
+            {
+                <div class="row col-12 align-middle">
+                    <div class="col-6 align-middle">
+                        @product.ProductName
+                    </div>
+                    <div class="col-6 align-middle">
+                        <a asp-page="/LoadDataSheet" asp-route-ProductId="@product.Id" class="btn btn-outline-dark" target="_blank">document</a>
+                    </div>
+                </div>
+                <hr />
+
+
+            }
+            @if (Model.products.Count < Model.TotalCount)
+            {
+                <button asp-page-handler="LoadMore" asp-route-currentPageNumber="@Model.PageNumber" asp-route-productsTotalCount="@Model.TotalCount" class="btn btn-info">LoadMore</button>
+            }
+
+
+        </form>
+        
+    </div>
+    
+    
+}
+
+
